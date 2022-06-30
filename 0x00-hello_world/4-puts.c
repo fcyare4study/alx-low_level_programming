@@ -1,15 +1,15 @@
 /*
- * file: 4-puts.c
- * Auth: farhan A mohamud
- */
+* file: 4-puts.c
+* Auth: farhan A mohamud
+*/
 #include <stdio.h>
 /**
- * main - prints "Programming is like building a multilingual puzzle, 
- * followed by a new line.
- * Return: always 0.
- */
+* main - prints "Programming is like building a multilingual puzzle,
+* followed by a new line.
+* Return: always 0.
+*/
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");	
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
