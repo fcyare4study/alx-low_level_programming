@@ -1,7 +1,2 @@
-#include <stdio.h>
+ * followed by a new line.
 
-int main(void)
-{
-	printf("hello world\n");
-		return(0);
-}
