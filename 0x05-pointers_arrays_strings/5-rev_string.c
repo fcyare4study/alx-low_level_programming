@@ -13,11 +13,11 @@ void rev_string(char *s)
 	char kmg;
 
 	for (; s[i] != '\0'; i++)
-		;
+	;
 	for (j = 0; j < (i / 2); j++)
 	{
-		kmg = s[j];
-		s[j] = s[i - j -1];
-		s[i -j -1] = kmg;
+	kmg = s[j];
+	s[j] = s[i - j -1];
+	s[i -j -1] = kmg;
 	}
 }
