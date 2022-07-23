@@ -10,8 +10,15 @@
  * Return; Always 0 (Success)
  */
 
-int check_num(char *str)
+/**
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Arguments
+ *
+ * return: Always 0 (Success)int check_num(char *str)
+ */
 
+int check_num(char *str)
 {
 /*Declaring variables*/
 unsigned int count;
