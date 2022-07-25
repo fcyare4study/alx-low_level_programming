@@ -10,15 +10,8 @@
  * Return; Always 0 (Success)
  */
 
-/**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
- *
- * return: Always 0 (Success)int check_num(char *str)
- */
-
 int check_num(char *str)
+
 {
 /*Declaring variables*/
 unsigned int count;
@@ -57,7 +50,7 @@ int sum = 0;
 count = 1;
 while (count < argc) /*Goes through the whole array*/
 {
-if (check_num(argv[count]))
+if(check_num(argv[count]))
 
 {
 str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
