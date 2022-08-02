@@ -1,4 +1,4 @@
 #ifndef ABS_H
 #define ABS_h
-#define ABS(x) (((x) < 0) ? ((x) * -1) : ((x) * 1))
+#define ABS(X) (((X) < 0) ? ((X) * -1) : ((X) * 1))
 #endif
