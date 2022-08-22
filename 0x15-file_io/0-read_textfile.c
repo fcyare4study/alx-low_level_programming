@@ -1,19 +1,33 @@
 #include "main.h"
 
 /**
- * read_textfile - reads a file and prints it to the
- * POSIX standard output.
- * @filename: the name of the file.
- * @letters: the number of characters to be read from the file
+ * create_file - create a new file, if the file does not exist
+ * @filename: the name of the file to be created
+ * @text_content: the contents to be stored in the file
  *
- * Return: the number of characters read from file.
+ * Return: 1 if success, else -1
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int r, w;
-	char *buf;
+	int len = 0, i;
 
 	if (!filename)
-		return (0);
+		return (-1);
+
+	fd = open(filename, O_CREAT | O_WRONLY | O_APPEND | O_TRUNC, 00600);
+	if (fd < 0)
+		return (-1);
+
+	if (text_content)
+	{
+		while (text_content[len])
+			len++;
+		i = write(fd, text_content, len);
+		if (len != i)
+			return (-1);
+	}
+
+	close(fd);
+	return (1);
 }
